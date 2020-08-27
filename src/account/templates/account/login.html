@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+
+
+{% block content %}
+
+<div class="container align-items-center">
+
+    <form class="form-signin" method="POST">
+        {% csrf_token %}
+
+        <img class="mb-5" src="{% static '/assets/icons/bootstrap.svg' %}" alt="" width="250" height="72">
+        <h1 class="h3 mb-3 font-weight-normal ">Login</h1>
+
+        <input type="email" id="inputEmail" name='email' class="form-control" placeholder="Email address" required autofocus>
+        <br>
+        <input type="password" id="inputPassword" name='password' class="form-control" placeholder="Password" required>
+        <br>
+        
+    
+    
+        {% for field in login_form %}
+            {% for error in field.errors %}
+            <p>
+                <small style="color: red">{{error}}</small>
+            </p>
+            {% endfor %}
+        {% endfor %}
+    
+        {% if login_form.non_field_errors %}
+        <div style="color:rgb(180, 43, 43)">
+            <p>
+                <small>{{login_form.non_field_errors}}</small>
+            </p>
+    
+        </div>
+        {% endif %}
+        <button class="btn btn-lg btn-primary btn-block" type="submit" style="align-self: center;">Log In</button>
+    </form>
+    
+
+</div>
+
+    
+    <!-- <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+    
+    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+    <div class="checkbox mb-3">
+    <label>
+        <input type="checkbox" value="remember-me"> Remember me
+    </label> -->
+    <!-- </div> -->
+    
+    
+
+
+
+
+
+
+
+
+
+<!-- <h2>Login. </h2>
+<form class="form-signin" method="POST">
+    {% csrf_token %}
+
+    {% for field in login_form %}
+    <p>
+        
+        
+
+        {% if field.help_text %}
+        <small style="color: gray">{{field.help_text}}</small>
+        {% endif %}
+    </p>
+    {% endfor %}
+
+    {% for field in login_form %}
+        {% for error in field.errors %}
+        <p>
+            <small style="color: red">{{error}}</small>
+        </p>
+        {% endfor %}
+    {% endfor %}
+
+    {% if login_form.non_field_errors %}
+    <div style="color:red">
+        <p>
+            <small>{{login_form.non_field_errors}}</small>
+        </p>
+
+    </div>
+    {% endif %}
+    <button class="btn btn-md btn-success" type="submit">Log in</button>
+</form> -->
+
+{% endblock content %}

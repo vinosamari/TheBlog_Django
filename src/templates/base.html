@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang=en>
+
+
+    <head>
+      <title>This is the title</title>
+      
+      {% include 'snippets/header.html' %}
+    </head>
+
+    <body>
+      
+    <div class="container">
+      
+        
+      {% block content %}
+        
+
+      {% endblock content %}
+
+
+    </div>
+      
+
+    </body>
+
+    <footer style="color: rgb(2, 2, 68);">
+      
+      {% include 'snippets/footer.html' %}
+        
+    </footer>
+
+</html>

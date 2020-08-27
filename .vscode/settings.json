@@ -1,0 +1,9 @@
+{
+    "editor.fontLigatures": null,
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "editor.quickSuggestions": null,
+    "editor.suggest.maxVisibleSuggestions": 5,
+    "explorer.compactFolders": false,
+    "editor.fontFamily": "Monaco,Menlo, 'Courier New', monospace"
+}
