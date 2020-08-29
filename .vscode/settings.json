@@ -1,9 +1,15 @@
-{
+{   
+
+    "python.envFile": "/Users/FEM_I/Documents/PYTHON DOCS/DJANGO PROJEX/PersonalBlog/.env",
     "editor.fontLigatures": null,
-    "editor.formatOnType": true,
-    "editor.formatOnPaste": true,
     "editor.quickSuggestions": null,
     "editor.suggest.maxVisibleSuggestions": 5,
     "explorer.compactFolders": false,
-    "editor.fontFamily": "Monaco,Menlo, 'Courier New', monospace"
+    "editor.fontFamily": "Monaco,Menlo, 'Courier New', monospace",
+    "editor.fontSize": 13,
+    "python.pythonPath": "/Users/FEM_I/.local/share/virtualenvs/PersonalBlog-XaxkooOP/bin/python",
+    "python.formatting.provider": "black",
+    "html.format.endWithNewline": true,
+    "html-css-class-completion.enableEmmetSupport": true,
+    
 }

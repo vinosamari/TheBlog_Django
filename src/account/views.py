@@ -73,7 +73,7 @@ def account_view(request):
                 'username': request.POST['username'],
             }
             form.save()
-            context['success_msg'] = 'Updated'
+            context['success_msg'] = 'Account Details Successfully Updated'
             
     else:
         form = AccountUpdateForm(
@@ -83,5 +83,6 @@ def account_view(request):
             }
         )
             
+    
     context['account_form'] = form 
     return render(request, 'account/account.html', context)
