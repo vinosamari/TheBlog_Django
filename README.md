@@ -1,1 +1,1 @@
-# TheBlog_Django
+# TheBlog_Python-Django-HTML-CSS-JS
